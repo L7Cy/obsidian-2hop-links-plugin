@@ -9,7 +9,6 @@ export const DEFAULT_SETTINGS: TwohopPluginSettings = {
   showNewLinks: true,
   showTagsLinks: true,
   showPropertiesLinks: true,
-  showImage: true,
   excludePaths: [],
   initialBoxCount: 10,
   initialSectionCount: 20,
