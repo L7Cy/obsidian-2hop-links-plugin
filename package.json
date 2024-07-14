@@ -1,6 +1,6 @@
 {
-  "name": "2hop-links-plus",
-  "version": "0.37.0",
+  "name": "cosensy-bridge",
+  "version": "0.0.1",
   "description": "Related links up to 2 hops away are displayed in a card format, allowing for easy browsing through connections between notes. Each card contains a preview of the corresponding note.",
   "main": "main.js",
   "scripts": {

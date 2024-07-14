@@ -39,14 +39,14 @@ export class TwohopSettingTab extends PluginSettingTab {
     containerEl.empty();
 
     this.createToggleSetting(
-      "Show 2hop links in separate pane",
-      "If true, the 2hop links is displayed in a separate pane.",
+      "Show links in separate pane",
+      "If true, the links is displayed in a separate pane.",
       "showTwoHopLinksInSeparatePane"
     );
     if (this.plugin.settings.showTwoHopLinksInSeparatePane) {
       this.createToggleSetting(
-        "Show 2hop links on the right",
-        "If true, the pane for 2hop links is displayed on the right, otherwise on the left.",
+        "Show links on the right",
+        "If true, the pane for links is displayed on the right, otherwise on the left.",
         "panePositionIsRight"
       );
     }
@@ -90,7 +90,7 @@ export class TwohopSettingTab extends PluginSettingTab {
       "",
       "showPropertiesLinks"
     );
-    this.createToggleSetting("Show Image in the 2hop Links", "", "showImage");
+    this.createToggleSetting("Show Image in the Links", "", "showImage");
     this.createTextAreaSetting(
       "Exclude Paths",
       "List of file or folder paths to exclude, one per line.",
@@ -125,8 +125,8 @@ export class TwohopSettingTab extends PluginSettingTab {
       "enableDuplicateRemoval"
     );
     this.createToggleSetting(
-      "Auto Load 2hop Links",
-      "Automatically load 2hop links when opening a note.",
+      "Auto Load Links",
+      "Automatically load links when opening a note.",
       "autoLoadTwoHopLinks"
     );
     this.createToggleSetting(
