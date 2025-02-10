@@ -162,6 +162,9 @@ export default class LinkView
           if (event.button === 0) {
             this.setState({ mouseDown: true });
           }
+          if (event.button === 1) {
+            event.preventDefault();
+          }
         }}
         onMouseUp={(event) => {
           if (this.isMobile) return;
