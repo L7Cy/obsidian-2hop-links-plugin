@@ -5,7 +5,6 @@ import { TwohopLink } from "../model/TwohopLink";
 import { App, setIcon } from "obsidian";
 
 interface TwohopLinksViewProps {
-  
   twoHopLinks: TwohopLink[];
   onClick: (fileEntity: FileEntity) => Promise<void>;
   getPreview: (fileEntity: FileEntity) => Promise<string>;
@@ -90,9 +89,6 @@ class LinkComponent extends React.Component<
         <div
           className={"twohop-links-twohop-header twohop-links-box"}
           onClick={async () => this.props.onClick(this.props.link.link)}
-          onMouseDown={async (event) =>
-            event.button == 0 && this.props.onClick(this.props.link.link)
-          }
         >
           {this.state.title}
         </div>
